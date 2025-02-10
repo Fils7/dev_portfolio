@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Filipe",
+  lastName: "Rey",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Fullstack Engineer",
+  avatar: "",
+  location: "Europe/Lisbon", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Portuguese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,22 +29,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Fils7",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/filipe-rey-5bb186250/",
   },
   {
-    name: "X",
+    name: "Filipe",
     icon: "x",
     link: "",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "santos@filrey.xyz",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Fullstack Web3 Engineer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Filipe, a fullstack engineer dedicated to secure and enhance the web3 space with a special interest in defi protocols.
+      <br /> I've contributed to several lending protocols like Clearpool Finance, Ozean Network and Cicero Network.
     </>
   ),
 };
@@ -73,7 +73,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,9 +81,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Passionate about decentralization I'm a fullstack developer that focus on enhancing and securing the web3 space.
+        Transforming complex challenges into functional solutions my work spans accross designing and implementing new UI features, building decentralized protocols and cordinating small teams.
       </>
     ),
   },
@@ -92,41 +91,40 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Holdex",
+        timeframe: "April 2024 - Jan 2025",
+        role: "Fullstack Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the smart contracts development team for Cicero lending protocol:
+            <ul>
+              <li>Designed and implemented the core Vault contract with yield-bearing strategies</li>
+              <li>Developed Proxy Pool Contract for efficient liquidity management</li>
+              <li>Created Liquidity Generation Event contract with fair distribution mechanics</li>
+              <li>Conducted internal security reviews and optimized gas consumption</li>
+            </ul>
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Spearheaded Ozean dapp development:
+            <ul>
+              <li>Collaborated with stakeholders and users to gather requirements and iterate on design solutions</li>
+              <li>Designed and implemented a modern, responsive UI using Svelte and TailwindCSS</li>
+              <li>Created an intuitive cross-chain Bridge interface with real-time transaction tracking</li>
+              <li>Built interactive Token Wrapper dashboard with live APY calculations</li>
+              <li>Developed dynamic Staking UI with visual lock period selectors</li>
+              <li>Implemented wallet connection flows and transaction status notifications</li>
+              <li>Enhanced user experience based on continuous user feedback and testing</li>
+            </ul>
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Redesigned Clearpool Finance platform:
+            <ul>
+              <li>Designed and built an analytics-rich Borrowers dashboard with interactive charts</li>
+              <li>Created responsive Prime membership interface with visual tier comparisons</li>
+              <li>Implemented real-time pool statistics with automated data refreshing</li>
+              <li>Built user-friendly forms with advanced validation and feedback</li>
+              <li>Iterated on designs based on user feedback and analytics insights</li>
+            </ul>
           </>,
         ],
         images: [],
@@ -138,12 +136,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Cyfrin Updraft",
+        description: <>Smart Contracts Security Reviews</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "OpenZeppelin",
+        description: <>Ethernaut Challenges / Smart Contracts Security.</>,
+      },
+      {
+        name: "Encode Code",
+        description: <>Solidity Bootcamp</>,
       },
     ],
   },
@@ -152,37 +154,35 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Smart Contracts",
+        description: <>Proficient in Solidity, Hardhat, Foundry, Proxy Contracts, and Multisignature wallets development.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Blockchain Tools",
+        description: <>Experience with Web3.js, Ethers.js, GraphQL, and The Graph.</>,
+        images: [],
       },
+      {
+        title: "Development",
+        description: <>Skilled in Git version control, with expertise in SDK Development.</>,
+        images: [],
+      },
+      {
+        title: "Security",
+        description: <>Specialized in Smart Contract Auditing and Formal Verification techniques.</>,
+        images: [],
+      },
+      {
+        title: "Layer 2 Solutions",
+        description: <>Knowledge and experience working with various Layer 2 scaling solutions.</>,
+        images: [],
+      },
+      {
+        title: "Frontend & Design",
+        description: <>Experienced with Svelte, Vercel deployment, and Figma for UI/UX design.</>,
+        images: [],
+      }
     ],
   },
 };
