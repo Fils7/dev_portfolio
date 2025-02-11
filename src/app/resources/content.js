@@ -37,6 +37,11 @@ const social = [
     link: "https://www.linkedin.com/in/filipe-rey-5bb186250/",
   },
   {
+    name: "santos@filrey.xyz",
+    icon: "email",
+    link: "mailto:santos@filrey.xyz",
+  },
+  {
     name: "X",
     icon: "x",
     link: "",
