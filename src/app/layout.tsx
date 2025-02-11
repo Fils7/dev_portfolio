@@ -21,7 +21,7 @@ export async function generateMetadata() {
       title: `${person.firstName}'s Portfolio`,
       description: "Portfolio website showcasing my work.",
       url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
+      siteName: `${person.lastName}'s Portfolio`,
       locale: "en_US",
       type: "website",
     },
