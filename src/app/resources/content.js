@@ -147,7 +147,7 @@ const about = {
       },
       {
         title: "Layer 2 Solutions",
-        description: <>Knowledge and experience working with various Layer 2 scaling solutions.</>,
+        description: <>Knowledge of Optimistic and Zero-knowledge rollups, experience working with various Layer 2 scaling solutions.</>,
         images: [],
       },
       {
