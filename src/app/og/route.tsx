@@ -52,7 +52,7 @@ export async function GET(request: Request) {
           }}
         >
           <img
-            src={"https://" + baseURL + person.avatar}
+            src={`https://${baseURL}${person.avatar}`}
             style={{
               width: "12rem",
               height: "12rem",
@@ -93,8 +93,8 @@ export async function GET(request: Request) {
       </div>
     </div>,
     {
-      width: 1920,
-      height: 1080,
+      width: 1200,
+      height: 630,
       fonts: [
         {
           name: "Inter",
@@ -102,6 +102,6 @@ export async function GET(request: Request) {
           style: "normal",
         },
       ],
-    },
+    }
   );
 }

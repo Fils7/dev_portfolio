@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Web3 Fullstack Engineer",
-  avatar: "/images/projects/project-01/avatar.jpeg",
+  avatar: "/images/projects/project-01/avatar1.jpeg",
   location: "Europe/Lisbon", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Portuguese"], // optional: Leave the array empty if you don't want to display languages
 };
