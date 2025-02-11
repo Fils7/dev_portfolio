@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Fullstack Engineer",
-  avatar: "",
+  avatar: "/images/projects/project-01/avatar.jpeg",
   location: "Europe/Lisbon", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Portuguese"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -37,7 +37,7 @@ const social = [
     link: "https://www.linkedin.com/in/filipe-rey-5bb186250/",
   },
   {
-    name: "Filipe",
+    name: "X",
     icon: "x",
     link: "",
   },
@@ -95,37 +95,9 @@ const about = {
         timeframe: "April 2024 - Jan 2025",
         role: "Fullstack Engineer",
         achievements: [
-          <>
-            Led the smart contracts development team for Cicero lending protocol:
-            <ul>
-              <li>Designed and implemented the core Vault contract with yield-bearing strategies</li>
-              <li>Developed Proxy Pool Contract for efficient liquidity management</li>
-              <li>Created Liquidity Generation Event contract with fair distribution mechanics</li>
-              <li>Conducted internal security reviews and optimized gas consumption</li>
-            </ul>
-          </>,
-          <>
-            Spearheaded Ozean dapp development:
-            <ul>
-              <li>Collaborated with stakeholders and users to gather requirements and iterate on design solutions</li>
-              <li>Designed and implemented a modern, responsive UI using Svelte and TailwindCSS</li>
-              <li>Created an intuitive cross-chain Bridge interface with real-time transaction tracking</li>
-              <li>Built interactive Token Wrapper dashboard with live APY calculations</li>
-              <li>Developed dynamic Staking UI with visual lock period selectors</li>
-              <li>Implemented wallet connection flows and transaction status notifications</li>
-              <li>Enhanced user experience based on continuous user feedback and testing</li>
-            </ul>
-          </>,
-          <>
-            Redesigned Clearpool Finance platform:
-            <ul>
-              <li>Designed and built an analytics-rich Borrowers dashboard with interactive charts</li>
-              <li>Created responsive Prime membership interface with visual tier comparisons</li>
-              <li>Implemented real-time pool statistics with automated data refreshing</li>
-              <li>Built user-friendly forms with advanced validation and feedback</li>
-              <li>Iterated on designs based on user feedback and analytics insights</li>
-            </ul>
-          </>,
+          "Led smart contract development for Cicero lending protocol",
+          "Developed and redesigned key DeFi platforms including Ozean Network and Clearpool Finance",
+          "Built modern, responsive DeFi interfaces focusing on user experience and blockchain integration",
         ],
         images: [],
       },
@@ -155,7 +127,7 @@ const about = {
     skills: [
       {
         title: "Smart Contracts",
-        description: <>Proficient in Solidity, Hardhat, Foundry, Proxy Contracts, and Multisignature wallets development.</>,
+        description: <>Proficient in Solidity, Hardhat, Foundry, Knowledge of defi, proxy contracts, multisignature wallets, ERC-20/ERC-21, account abstraction and more.</>,
         images: [],
       },
       {
@@ -170,7 +142,7 @@ const about = {
       },
       {
         title: "Security",
-        description: <>Specialized in Smart Contract Auditing and Formal Verification techniques.</>,
+        description: <>Specialized in smart contract best practices, vulnerability detection and formal verification techniques.</>,
         images: [],
       },
       {

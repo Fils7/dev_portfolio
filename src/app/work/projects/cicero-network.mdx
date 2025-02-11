@@ -3,7 +3,7 @@ title: "Cicero Network"
 publishedAt: "2025-02-10"
 summary: "Led the smart contracts development to permissionless lending implmentation."
 images:
-  - "/images/projects/project-01/cicero-image.png"
+  - "/images/projects/project-01/cicero-img.png"
 team:
   - name: "Holdex"
     role: "Software Engineer"
@@ -15,6 +15,14 @@ team:
 
 Led the development of Cicero Network, a sophisticated DeFi protocol implementing a multi-tranche lending system with proxy pool architecture. The protocol features distinct tranches for different risk appetites and an insurance mechanism for enhanced security.
 
+## Technologies Used
+
+- **Solidity**
+- **OpenZeppelin**
+- **Hardhat**
+- **Ethers.js**
+- **TypeScript**
+
 ## Key Features
 
 - **Proxy Pool Architecture**: Designed and implemented a main proxy contract managing three specialized child contracts: Senior Tranche, Junior Tranche, and Insurance Pool, enabling efficient risk segmentation and capital allocation.
@@ -24,21 +32,11 @@ Led the development of Cicero Network, a sophisticated DeFi protocol implementin
 - **Vault System**: Implemented a secure vault contract managing asset deposits, withdrawals, and yield distribution across different tranches.
 - **Risk Management**: Created a tiered risk management system through the tranche structure, allowing users to choose their preferred risk-reward profile.
 
-## Technologies Used
+## Challenges and Learnings
 
-- **Solidity**: Primary language for smart contract development
-- **OpenZeppelin**: For secure, standard contract implementations
-- **Hardhat**: Development environment and testing framework
-- **Ethers.js**: For contract interactions and testing
-- **TypeScript**: For testing and deployment scripts
+As my first experience leading a smart contract implementation, this project presented significant learning opportunities and challenges. The complexity of breaking down protocol specifications into manageable components required careful project management and strategic planning. Creating comprehensive technical documentation proved crucial, as it helped maintain clarity throughout the development process and ensured all team members understood the implementation details.
 
-As my first experience leading a smart contract implementation, this project presented multiple learning opportunities. Key challenges included:
-
-- **Project Management**: Breaking down complex protocol specifications into manageable sub-tasks and creating clear implementation goals
-- **Technical Documentation**: Developing comprehensive documentation from initial specifications through to technical implementation details
-- **Architecture Design**: Designing the interaction flow between multiple contracts while ensuring secure fund management and proper yield distribution
-- **Smart Contract Development**: Implementing the proxy pattern with careful consideration of upgrade paths and state management
-- **Testing Strategy**: Creating extensive test scenarios to ensure protocol stability and security across all components
+One of the most challenging aspects was designing the architecture for contract interactions. This demanded meticulous attention to security considerations, particularly in managing fund flows and yield distribution across the protocol. Implementing the proxy pattern brought its own set of challenges, especially in handling state management and planning upgrade paths that wouldn't disrupt existing protocol operations.
 
 ## Outcome
 
