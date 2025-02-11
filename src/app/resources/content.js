@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Fullstack Engineer",
+  role: "Web3 Fullstack Engineer",
   avatar: "/images/projects/project-01/avatar.jpeg",
   location: "Europe/Lisbon", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Portuguese"], // optional: Leave the array empty if you don't want to display languages
@@ -42,9 +42,9 @@ const social = [
     link: "",
   },
   {
-    name: "Email",
-    icon: "email",
-    link: "santos@filrey.xyz",
+    name: "Resume CV",
+    icon: "document",
+    link: "/Resume.pdf",
   },
 ];
 
@@ -92,7 +92,7 @@ const about = {
     experiences: [
       {
         company: "Holdex",
-        timeframe: "April 2024 - Jan 2025",
+        timeframe: "2024 - 2025",
         role: "Fullstack Engineer",
         achievements: [
           "Led smart contract development for Cicero lending protocol",
